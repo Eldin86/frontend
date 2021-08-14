@@ -1,0 +1,96 @@
+.ResumeBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-image: url('../../assets/resume_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 75%;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+.Educations,  .Experiences,  .Proffesional_skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+ .Educations .Education,
+ .Experiences .Experience{
+    margin: 5px;
+    flex-basis: 310px;
+}
+ .Educations .Education .desc,
+ .Experiences .Experience .desc{
+    max-width: 310px;
+    margin-bottom: 30px;
+    border: 4px solid #4C5A67;
+    border-radius: 5px;
+}
+ .Educations .Education .desc h4,
+ .Experiences .Experience .desc h4{
+    color: #2C77C1;
+}
+
+ .Educations .Education .Education_content_wrapper .fromTo,
+ .Experiences .Experience .Experiences_content_wrapper .fromTo{
+    border: 4px solid #4C5A67;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+ .Proffesional_skills .Proffesional_skill{
+    flex-basis: 85px;
+}
+
+ .Personal_skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+ .Personal_skills .Personal_skill{
+    flex-basis: 155px;
+}
+ svg.CircularProgress{
+    width: 50%;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+     .Educations,
+     .Experiences{
+        margin: auto;
+        width: 95%;
+    }
+     .Educations .Education,
+     .Experiences .Experience{
+        margin: 0 15px;
+        flex-basis: 260px;
+    }
+}
+
+@media (min-width: 1024px){
+     .Educations,
+     .Experiences{
+        width: 100%;
+    }
+     .Educations .Education,
+     .Experiences .Experience{
+        margin: 0 15px;
+        flex-basis: 350px;
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        font-size: 85%;
+    }
+     .Proffesional_skills,  .Personal_skills{
+        justify-content: space-around;
+    }
+     .Personal_skills .Personal_skill{
+        flex-basis: 100px;
+    }
+     .CircularProgress{
+        width: 70px;
+    }
+}

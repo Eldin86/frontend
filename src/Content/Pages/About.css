@@ -1,0 +1,43 @@
+.AboutBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-image: url('../../assets/about_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+.About_me_text{
+    white-space: pre-line;
+}
+.Hobbies{
+    width: 80%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Hobbie{
+    height: 100px;
+    flex-basis: 75px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: space-between; 
+    flex-direction: column;
+}
+.Hobbie img{
+    margin: auto;
+}
+@media (max-width: 600px){
+    .Banner{
+        background-position: 45% 35%;
+        height: 200px;
+        font-size: .9rem;
+    }
+}

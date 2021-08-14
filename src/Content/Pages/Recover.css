@@ -1,0 +1,16 @@
+.RecoverBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-image: url('../../assets/password_recover_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 30% 48%;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+.RecoverBanner h2{
+    text-align: center;
+}

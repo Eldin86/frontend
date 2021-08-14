@@ -1,0 +1,71 @@
+.LoginBanner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 350px;
+    background-image: url('../../assets/login_banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 78%;
+    font-size: 1.4rem;
+    color: #ffffff;
+}
+
+.Login_content{
+    display: flex;
+    justify-content: center;
+}
+.Login_form, .Login_form form{
+    width: 80%;
+    max-width: 300px;
+    margin: auto;
+}
+
+.Login_form, .Login_form form input {
+    border-radius: 5px;
+}
+
+.Login_form .lds-dual-ring{
+    width: 15px;
+    height: 15px
+}
+.Login_form .lds-dual-ring:after{
+    width: 10px;
+    height: 10px
+}
+.Login_form .login_signup_wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.Login_form .login_signup_wrapper a{
+    font: inherit;
+    padding: 0.5rem 1.3rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #2466CA;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: bold;
+    text-align: center;
+}
+.Login_form .recover_password a{
+    color: #ffffff;
+}
+@media (max-width: 479px){
+    .Login_form form{
+        width: 100%;
+    }
+    .Login_form .login_signup_wrapper{
+        flex-direction: column;
+    }
+    .Login_form .login_signup_wrapper .button, .Login_form .login_signup_wrapper a{
+        width: 100%;
+        margin-bottom: 14px;
+    }
+    .Login_form .recover_password{
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,57 @@
+.Modal {
+    z-index: 130;
+    position: fixed;
+    top: 22vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 65%;
+    background: #2466CA;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 8px;
+  }
+  .center-text{
+    text-align: center;
+  }
+.modals-enter {
+    transform: translateY(-10rem);
+    opacity: 0;
+  }
+  
+  .modals-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 200ms;
+  }
+  
+  .modals-exit {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .modals-exit-active {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: all 200ms;
+  }
+
+  @media (max-width: 480px){
+    .Modal {
+      width: 80%;
+    }
+  }
+  @media (min-width: 481px) and (max-width: 768px){
+    .Modal {
+      width: 65%;
+    }
+  }
+  @media (min-width: 769px) and (max-width: 1024px){
+    .Modal {
+      width: 55%;
+    }
+  }
+  @media (min-width: 1025px){
+    .Modal {
+      width: 40%;
+    }
+  }

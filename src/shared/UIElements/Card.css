@@ -1,0 +1,6 @@
+.Card{
+    margin: auto;
+    padding: 25px;
+    -webkit-box-shadow: 0px 7px 6px -1px #1B2838; 
+    box-shadow: 0px 7px 6px -1px #1B2838;
+}

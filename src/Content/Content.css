@@ -1,0 +1,27 @@
+.ContentContainer{
+    flex-grow: 1;
+    transition: .5s;
+    margin: 30px;
+    background-color: #2C3E50;
+    overflow-y: scroll;
+    border: 4px solid #1B2838;
+}
+.Contentopen{
+    margin-left: 230px;
+}
+
+.Contentclose{
+    margin-left: 30px;
+}
+
+@media (max-width: 768px){
+    .ContentContainer{
+        margin: 10px;
+    }
+    .Contentopen{
+        margin-left: 10px;
+    }
+    /*.Content{
+        padding: 5px;
+    }*/
+}

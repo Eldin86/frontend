@@ -1,0 +1,31 @@
+.Nav{
+    margin-top: 0px;
+    padding: 0;
+}
+.Nav li{
+    margin-bottom: 5px;
+}
+.Nav li a{
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+.Nav li a span{
+    font-size: .8rem;
+}
+.Nav li a img{
+    margin-left: 10px;
+    margin-right: 15px;
+    background-color: #1B2838;
+    padding: 4px;
+    border-radius: 50%;
+}
+.Nav li:hover{
+    background-color: #1B2838;
+    background-position: 0 -100%;
+    transition: all 1s linear;
+}
+.Nav .active{
+    background-color: #1B2838;
+}
